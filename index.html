@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Facebook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <link rel="icon" href="./img/fb.png" type="image/x-icon"/>
+</head>
+
+<style>
+    body{
+        margin: 0;
+    }
+    nav {
+        border-bottom: 2px solid #5472b9;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-bar {
+        border-radius: 25px;
+        background-color: gray;
+        padding: 5px 10px;
+    }
+
+    .custom-search-bar {
+        position: relative;
+        display: inline-block;
+    }
+
+    .custom-search-input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        width: 230px;
+    }
+
+    .custom-search-icon {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .form-control {
+        margin-left: 10px;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .bg-body-tertiary {
+        --bs-bg-opacity: 0;
+    }
+
+    .navbar-icons{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar-icons2 {
+        display: flex;
+        align-items: center;
+        margin-right: 260px;
+        gap: 50px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    @media (max-width: 991px) {
+        .navbar-icons2 {
+            display: none;
+        }
+        .area1{
+            display: none;
+        }
+        .area2{
+            display: none;
+        }
+    }
+
+    ul {
+        text-align: left;
+        padding: 0; /* Rimuove il padding predefinito delle liste */
+    }
+
+    li {
+        list-style: none; /* Rimuove i punti elenco predefiniti */
+        padding: 10px 0; /* Aggiunge spaziatura tra gli elementi della lista */
+        display: flex;
+        align-items: center;
+    }
+
+    li img {
+        width: 30px; /* Imposta la larghezza desiderata per le immagini */
+        height: 30px; /* Imposta l'altezza desiderata per le immagini */
+        margin-right: 10px; /* Aggiunge uno spazio tra l'immagine e il testo */
+        border-radius: 50%; /* Aggiunge un bordo arrotondato alle immagini */
+    }
+   
+    .card-group {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px; /* Aggiungi un margine tra le card */
+
+    }
+    .card-img-top{
+        border-radius: 15%;
+    }
+.card{
+    width: 9.5rem;
+    background-color: transparent; 
+    border: none;
+
+}
+
+.card-img-caption {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+  
+.card-img-caption .card-img-top {
+  z-index: 0;
+}
+    
+.card-img-caption .card-text {
+  text-align: center;
+  width: 100%;
+  margin: 135% 0;
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-img-circle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #5472b9;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card-img-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media(max-width: 480px) {
+ main {
+   width: 90%;
+ }
+ 
+ .flex-body {
+    padding: 1em 1em;
+}
+
+}
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: white;">
+            <div class="logo">
+                <img src="./img/fb.png" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;">
+                <div class="custom-search-bar">
+                    <form class="d-flex" role="search">
+                        <input type="text" style="background-color: #F5F5F5;"
+                            class="form-control custom-search-input me-2" placeholder="cerca su facebook"
+                            aria-label="cerca su facebook">
+                        <div class="custom-search-icon">&#128269;</div>
+                    </form>
+                </div>
+            </div>
+            <div class="navbar-icons2">
+                <img src="./img/home.png" alt="Icon 1" class="icon">
+                <img src="./img/video.png" alt="Icon 2" class="icon">
+                <img src="./img/media.png" alt="Icon 3" class="icon">
+                <img src="./img/group.png" alt="Icon 4" class="icon">
+            </div>
+            <div class="navbar-icons">
+                <img src="./img/settings.png" alt="Icon 1" class="icon">
+                <img src="./img/chat.png" alt="Icon 2" class="icon">
+                <img src="./img/bell.png" alt="Icon 3" class="icon">
+                <img src="./img/biagio.jpg" alt="Icon 4" class="icon" style="border-radius: 50%;">
+            </div>
+        </div>
+    </nav>
+    <section style="background-color: #F5F5F5;">
+        <br>
+        <br>
+        <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <div class="area1">
+                                <ul>
+                                    <li><img src="./img/biagio.jpg" alt="Biagio Scaglia">Biagio Scaglia</li>
+                                    <li><img src="./img/amici.png" alt="Amici">Amici</li>
+                                    <li><img src="./img/saved.png" alt="salvati">Elementi salvati</li>
+                                    <li><img src="./img/memories.png" alt="memorie">Ricordi</li>
+                                    <li><img src="./img/group.png" alt="gruppi">Gruppi</li>
+                                    <li><img src="./img/video.png" alt="video">Video</li>
+                                    <li><img src="./img/media.png" alt="place">Marketplace</li>
+                                </ul>
+                                <hr>
+                                <h6 style="color: darkgray; text-align: left">i tuoi collegamenti rapidi</h6>
+                                <ul>
+                                <li><img src="./img/game-controller.png" alt="Biagio Scaglia">collegamento 1</li>
+                                    <li><img src="./img/game-controller.png" alt="Amici">collegamento 2</li>
+                                    <li><img src="./img/game-controller.png" alt="salvati">collegamento 3</li>
+                                </ul>
+                                <p style="color: darkgray; text-align: left; font-size: 12px;">Privacy  · Condizioni  · Pubblicità  · Scegli tu!   · Cookie  · Altro  · Meta © 2024</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="container text-center">
+                                <div class="row card-group">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-img-caption">
+                                                <div class="card-img-circle">
+                                                    <img src="./portrait/pfp.jpg" alt="Circle Image">
+                                                </div>
+                                                <p class="card-text"><b>Aizen Sosuke</b></p>
+                                                <img src="./portrait/aizen.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title"></h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-img-caption">
+                                                <div class="card-img-circle">
+                                                    <img src="./portrait/pfp.jpg" alt="Circle Image">
+                                                </div>
+                                                <p class="card-text"><b>Aizen Sosuke</b></p>
+                                                <img src="./portrait/aizen.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title"></h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-img-caption">
+                                                <div class="card-img-circle">
+                                                    <img src="./portrait/pfp.jpg" alt="Circle Image">
+                                                </div>
+                                                <p class="card-text"><b>Aizen Sosuke</b></p>
+                                                <img src="./portrait/aizen.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title"></h5>
+                                                <p class="card-text"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container" style="background-color: white; padding: 20px; width: 450px; border-radius: 5%;">
+                                    <div style="display: flex; align-items: center;">
+                                        <img src="./img/biagio.jpg" alt="Magnifying Glass" style="width: 40px; height: 40px; margin-top: 5px; margin-right: 5px; border-radius: 50%;">
+                                        <input type="text" style="background-color: #F5F5F5; width: 450px;"
+                            class="form-control custom-search-input me-2" placeholder="A cosa stai pensando Biagio?"
+                            aria-label="cerca su facebook" >
+                                    </div>
+                                    <hr>
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-left: 65px;">
+                                        <img src="./img/live-stream.png" alt="Magnifying Glass" style="width: 25px; height: 25px; margin-right: 5px;">Vai in diretta
+                                        <img src="./img/gallery.png" alt="Options" style="width: 25px; height: 25x;">Foto e video
+                                    </div>
+                                    
+                                </div>
+                                <br>
+                                        <br>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="area1">
+                                <h6 style="color: darkgray;">Le tue Pagine e i tuoi profili</h6>
+                                <hr>
+                                <h6 style="color: darkgray; text-align: left; margin-left: 5px; display: flex; justify-content: space-between; align-items: center;">
+                                    Contatti
+                                    <div style="display: flex; align-items: center;">
+                                        <img src="./img/search.png" alt="Magnifying Glass" style="width: 20px; height: 20px; margin-right: 5px;">
+                                        <img src="./img/options.png" alt="Options" style="width: 20px; height: 20px;">
+                                    </div>
+                                </h6>
+                                    <ul style="overflow: auto;">
+                                        <li><img src="./img/user.png" >Amico 1</li>
+                                        <li><img src="./img/user.png" >Amico 2</li>
+                                        <li><img src="./img/user.png" >Amico 3</li>
+                                        <li><img src="./img/user.png" >Amico 4</li>
+                                        <li><img src="./img/user.png" >Amico 5</li>
+                                        <li><img src="./img/user.png" >Amico 6</li>
+                                        <li><img src="./img/user.png" >Amico 7</li>
+                                        <li><img src="./img/user.png" >Amico 8</li>
+                                        <li><img src="./img/user.png" >Amico 9</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
